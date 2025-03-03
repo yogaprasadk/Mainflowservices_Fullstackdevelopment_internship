@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/logo.png" class="logo" />
+      <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Features</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Feature 1</a></li>
+              <li><a href="#">Feature 2</a></li>
+              <li><a href="#">Feature 3</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="cta-section">
+        <h1>Unlock Your Full Potential Today</h1>
+        <p>
+          Get started with our service and experience the difference. Join
+          thousands of happy customers who are already reaping the benefits!
+        </p>
+        <a href="#get-started" class="cta-button">Get Started</a>
+      </div>
+
+      <div class="container">
+        <h1>Key Features of Our Product/Service</h1>
+        <div class="features">
+          <div class="feature">
+            <h2>Secure Payment Gateway</h2>
+            <p>
+              Offers safe and encrypted payment options for customers to make
+              purchases with confidence.
+            </p>
+          </div>
+          <div class="feature">
+            <h2>Product Search & Filters</h2>
+            <p>
+              Enables users to easily search and filter products based on
+              categories, price range, ratings, etc.
+            </p>
+          </div>
+          <div class="feature">
+            <h2>Personalized Workout Plans</h2>
+            <p>
+              Tailored fitness routines based on user goals and fitness levels
+              to ensure effective workouts.
+            </p>
+          </div>
+          <div class="feature">
+            <h2>Collaborative Workspace</h2>
+            <p>
+              Teams can collaborate in real-time, share files, and comment on
+              projects for improved communication.
+            </p>
+          </div>
+          <div class="feature">
+            <h2>Energy Saving</h2>
+            <p>
+              Automatically adjusts the temperature to reduce energy consumption
+              and lower utility bills.
+            </p>
+          </div>
+          <div class="feature">
+            <h2>Automatic Backup</h2>
+            <p>
+              Automatically backs up photos, documents, and other important
+              files to the cloud for easy recovery.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <section id="contact">
+        <div class="contact-section">
+          <h2>Contact Us</h2>
+          <form action="submit_form.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p class="footer">
+          &copy; 2025 Landing Page By Yogaprasad. All Rights Reserved.
+        </p>
+        <p class="footer-links">
+          <a href="/privacy-policy.html">Privacy Policy</a> |
+          <a href="/terms-of-service.html">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
